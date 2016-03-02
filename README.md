@@ -11,6 +11,10 @@ clone, jalankan server node.js di terminal (jalankan /CerdasCermatSD/bin/www), m
 
 ## Developing
 
+## Anggota
+* "kamal"
+* "sarah"
+* "lulu"
 
 
 ### Tools
