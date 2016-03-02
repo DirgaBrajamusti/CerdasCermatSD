@@ -1,0 +1,58 @@
+<h1>Lobi</h1>
+<p>
+<div ng-show="lobiInput">
+
+<div ng-show="boxnama && listplayer.length > 0" ng-init="boxnama = true">
+	<h2>Pilih pemain</h2>
+	<ul>
+			<li ng-repeat="nama in listplayer">
+				<a href	ng-click="addplayer(nama)">{{nama}}</a>
+			</li>
+	</ul>
+</div>
+
+	<div ng-show="boxcreateroom" ng-init="boxcreateroom = false">
+		<div class="row">
+	        <div class="col-md-6">
+	            <p class="input-group">
+	              <input  type="text" class="form-control" ng-model = "namaroom"	 focus-me="fokusroom"  required placeholder="buat game room baru" />
+	              <span class="input-group-btn">
+	                <button type="button" class="btn btn-default" ng-click="usrjoingame(namaroom, 'new')" ><i class="glyphicon glyphicon-link"></i> OK</button>
+	              </span>
+	            </p>
+	        </div>
+   		</div>
+	</div>		
+		
+			
+	<div ng-show="boxjoinroom && rooms.length > 0" ng-init="boxjoinroom = false;">
+		<label>Join room</label>
+		<ul>
+			<li ng-repeat="(room, name) in rooms">
+				<a href	ng-click="usrjoingame(rooms[room].name)">{{rooms[room].name}}, jumlah pemain = {{rooms[room].playerlist}}</a>
+			</li>
+		</ul>		
+	</div>	
+		
+	<div ng-show="boxstatus" ng-init="boxstatus = false">
+		<label>Room: {{info_g_room}}</label>
+		<p>
+		TUNGGU
+		{{info}}
+	</div>
+	
+	<p>
+	<div ng-show="aturaninfo">
+		Aturan bermain
+		<p>
+		<ul>
+			<li>Silakan pilih nama dalam list</li>
+			<li>buat game room jika belum ada, atau Anda menghendaki membuat game room yang baru</li>
+			<li>Pilih bergabung dengan room yang diinginkan</li>
+			<li>Tunggu kesiapan seluruh pemain (maksimum 4 pemain)</li>
+		</ul>
+	</div>
+		
+	
+</div>
+

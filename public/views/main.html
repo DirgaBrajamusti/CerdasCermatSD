@@ -1,0 +1,42 @@
+<h1>SOAL REBUTAN</h1>
+<h2>{{pemain}}</h2>
+
+<p>
+	{{isi}}
+</p>
+
+<div ng-show="boxmain" ng-init="boxmain = true">
+<div>
+	<input style="width: 200px;" ng-model="message"/> 
+	<input type="button" class="btn btn-primary" value="send" ng-click="datasend(message);" />
+</div>
+<br>
+<table>
+  <tr>
+    <th>chat</th>    
+  </tr>
+  <tr ng-repeat="kata in pembicaraan">
+    <td>{{kata.isi}}</td>
+  </tr>
+</table>
+
+
+<hr>
+
+<ul>
+			<li ng-repeat="soal in soals">
+				{{soal.soal}}
+				<p>
+				 <div ng-repeat="pilih in soal.pilihan">				 	
+					<input type="radio"  ng-model="$parent.pilih" ng-value="pilih.desc" ng-change="contreng(soal.no, pilih.id)">
+			         <label>
+			          {{pilih.desc}}
+			         </label>
+				 </div>
+			</li>
+	</ul>
+	
+    Jawaban yg dipilih <strong>{{pilih}}</strong>
+    <p></p> 
+    <br/>
+</div> 

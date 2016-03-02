@@ -1,0 +1,23 @@
+<h1>Users</h1>
+
+<h2>List</h2>
+
+<table class="table table-hover">
+<thead><tr><td>Nim</td><td>Nama</td></tr></thead>
+<tbody ng-repeat='user in users'>
+	<tr>
+		<td>{{user.nim}}</td>
+		<td>{{user.nama}}</td>
+		<td><a href ng-click='hapus(user)'>hapus</a></td>
+		<td><a href ng-click='isiForm(user)'>update</a></td>
+	
+	</tr>
+</tbody>
+</table>
+
+<h2>{{editUserTitle}}</h2>
+<p>Enter Nim: <input type="text" ng-model="user.nim"></p>
+<p>Enter Nama: <input type="text" ng-model="user.nama"></p>
+<p><input type="button" value="Tambah" class="btn btn-primary" ng-click="tambah()" ng-show="!buttonupdate"/></p>
+<p><input type="button" value="Ubah" class="btn btn-primary" ng-click="ubah(user)" ng-show="buttonupdate"/></p>
+<input type="button" value="Batal" class="btn btn-primary" ng-click="batal()" ng-show="buttonupdate"/>
