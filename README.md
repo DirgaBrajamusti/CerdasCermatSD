@@ -1,8 +1,9 @@
 
 
-# Kuis
+# Cerdas Cermat SD
 
-
+Cerdas Cermat SD open, dikembangkan sebagai sumbangsih alternatif aktifitas belajar mengajar khususnya evaluasi bagi siswa sekolah dasar (SD).
+Tujuan dapat meningkatkan respon siswa SD dalam menjawab pertanyaan.
 
 ## Usage
 
