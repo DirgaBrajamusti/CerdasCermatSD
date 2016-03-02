@@ -7,14 +7,14 @@ Tujuan dapat meningkatkan respon siswa SD dalam menjawab pertanyaan.
 
 ## Usage
 
-clone, jalankan server node.js di terminal (jalankan /CerdasCermatSD/bin/www), mysql
+clone, jika memakai eclipse disarankan clone di luar folder workspace defaultnya. Jalankan server node.js di terminal (jalankan /CerdasCermatSD/bin/www), mysql
 
 ## Developing
 
 ## Anggota
-* "kamal"
-* "sarah"
-* "lulu"
+* kamal
+* sarah
+* lulu
 
 
 ### Tools
