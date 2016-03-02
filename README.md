@@ -7,7 +7,7 @@ Tujuan dapat meningkatkan respon siswa SD dalam menjawab pertanyaan.
 
 ## Usage
 
-
+clone, jalankan server node.js di terminal (jalankan /CerdasCermatSD/bin/www), mysql
 
 ## Developing
 
