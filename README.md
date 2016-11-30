@@ -12,9 +12,9 @@ clone, jika memakai eclipse disarankan clone di luar folder workspace defaultnya
 ## Developing
 
 ## Anggota
-* kamal
-* sarah
-* lulu
+* Mohamad Nurkamal Fauzan
+* Dini Hamidin
+* Widia Resdiana
 
 
 ### Tools
